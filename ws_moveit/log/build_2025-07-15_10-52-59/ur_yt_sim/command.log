@@ -1,0 +1,6 @@
+Invoking command in '/ws_moveit/build/ur_yt_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/ur_yt_sim -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/ur_yt_sim
+Invoked command in '/ws_moveit/build/ur_yt_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/ur_yt_sim -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/ur_yt_sim
+Invoking command in '/ws_moveit/build/ur_yt_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/ur_yt_sim -- -j12 -l12
+Invoked command in '/ws_moveit/build/ur_yt_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/ur_yt_sim -- -j12 -l12
+Invoking command in '/ws_moveit/build/ur_yt_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/ur_yt_sim
+Invoked command in '/ws_moveit/build/ur_yt_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/ur_yt_sim

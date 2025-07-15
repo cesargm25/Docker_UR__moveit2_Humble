@@ -16,7 +16,7 @@ if [[ $1 = "--nvidia" ]] || [[ $1 = "-n" ]]
                --mount source=ws_moveit,target=/ws_moveit \
                --net=host \
                --privileged \
-               --name cg4yclonedds cg4yclonedds-img
+               --name arm_gripper arm_gripper-img
 
 else
 
@@ -30,5 +30,5 @@ else
                 -v ./ws_moveit:/ws_moveit \
                --net=host \
                --privileged \
-               --name cg4yclonedds cg4yclonedds-img
+               --name arm_gripper arm_gripper-img
 fi

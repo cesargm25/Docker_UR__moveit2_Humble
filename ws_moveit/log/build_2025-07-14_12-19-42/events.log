@@ -1,0 +1,561 @@
+[0.000000] (-) TimerEvent: {}
+[0.000411] (robotiq_controllers) JobQueued: {'identifier': 'robotiq_controllers', 'dependencies': OrderedDict()}
+[0.000505] (robotiq_description) JobQueued: {'identifier': 'robotiq_description', 'dependencies': OrderedDict()}
+[0.000533] (ur_description) JobQueued: {'identifier': 'ur_description', 'dependencies': OrderedDict()}
+[0.000542] (ur_simulation_gazebo) JobQueued: {'identifier': 'ur_simulation_gazebo', 'dependencies': OrderedDict([('ur_description', '/ws_moveit/install/ur_description')])}
+[0.001042] (ur_description) JobStarted: {'identifier': 'ur_description'}
+[0.007134] (robotiq_controllers) JobStarted: {'identifier': 'robotiq_controllers'}
+[0.011398] (robotiq_description) JobStarted: {'identifier': 'robotiq_description'}
+[0.014943] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'cmake'}
+[0.015370] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '/ws_moveit/src/Universal_Robots_ROS2_Description', '-DCMAKE_INSTALL_PREFIX=/ws_moveit/install/ur_description'], 'cwd': '/ws_moveit/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/ur_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.017764] (robotiq_controllers) JobProgress: {'identifier': 'robotiq_controllers', 'progress': 'cmake'}
+[0.018094] (robotiq_controllers) Command: {'cmd': ['/usr/bin/cmake', '/ws_moveit/src/ros2_robotiq_gripper/robotiq_controllers', '-DCMAKE_INSTALL_PREFIX=/ws_moveit/install/robotiq_controllers'], 'cwd': '/ws_moveit/build/robotiq_controllers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/robotiq_controllers'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.020270] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'cmake'}
+[0.020574] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '/ws_moveit/src/ros2_robotiq_gripper/robotiq_description', '-DCMAKE_INSTALL_PREFIX=/ws_moveit/install/robotiq_description'], 'cwd': '/ws_moveit/build/robotiq_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/robotiq_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.067685] (ur_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.067973] (robotiq_description) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.068163] (robotiq_controllers) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099949] (-) TimerEvent: {}
+[0.113810] (robotiq_controllers) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.114087] (ur_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.119661] (robotiq_description) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.120190] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.120299] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.125747] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.176106] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.176267] (ur_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.180700] (ur_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.180840] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.180969] (ur_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.182893] (robotiq_controllers) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.183068] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.183135] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.183340] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.184451] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.186058] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.191377] (robotiq_description) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.191708] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.191836] (robotiq_description) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.194736] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200058] (-) TimerEvent: {}
+[0.244488] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.251290] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.251473] (ur_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.251704] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.252014] (ur_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.255759] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.256838] (robotiq_controllers) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.256989] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.257156] (robotiq_controllers) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.259740] (robotiq_controllers) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.261855] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.267896] (robotiq_description) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.268125] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.268289] (robotiq_description) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.270507] (robotiq_description) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300175] (-) TimerEvent: {}
+[0.369606] (ur_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.390644] (robotiq_description) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.394682] (robotiq_controllers) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.400406] (-) TimerEvent: {}
+[0.455078] (ur_description) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[0.479675] (robotiq_controllers) StdoutLine: {'line': b'-- Found controller_interface: 2.51.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[0.500570] (-) TimerEvent: {}
+[0.516532] (robotiq_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.518819] (robotiq_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.520285] (robotiq_description) StdoutLine: {'line': b'-- Build files have been written to: /ws_moveit/build/robotiq_description\n'}
+[0.524038] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.524471] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'build'}
+[0.525275] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws_moveit/build/robotiq_description', '--', '-j12', '-l12'], 'cwd': '/ws_moveit/build/robotiq_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/robotiq_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.528641] (robotiq_controllers) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.532922] (robotiq_controllers) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.539657] (robotiq_controllers) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.548700] (robotiq_controllers) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.558687] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.559642] (robotiq_description) JobProgress: {'identifier': 'robotiq_description', 'progress': 'install'}
+[0.560757] (robotiq_controllers) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.567341] (robotiq_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws_moveit/build/robotiq_description'], 'cwd': '/ws_moveit/build/robotiq_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/robotiq_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.573496] (robotiq_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.573680] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/config\n'}
+[0.573750] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/config/robotiq_controllers.yaml\n'}
+[0.573810] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/launch\n'}
+[0.573951] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/launch/view_gripper.launch.py\n'}
+[0.574055] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/launch/robotiq_control.launch.py\n'}
+[0.574117] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes\n'}
+[0.574172] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual\n'}
+[0.574227] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85\n'}
+[0.574284] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/ur_to_robotiq_adapter.dae\n'}
+[0.574363] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/robotiq_base.dae\n'}
+[0.576245] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_knuckle.dae\n'}
+[0.576403] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_inner_knuckle.dae\n'}
+[0.576689] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger.dae\n'}
+[0.576877] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_inner_knuckle.dae\n'}
+[0.576985] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger.dae\n'}
+[0.577175] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_finger_tip.dae\n'}
+[0.577392] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/right_knuckle.dae\n'}
+[0.577603] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_85/left_finger_tip.dae\n'}
+[0.577815] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140\n'}
+[0.577931] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_knuckle.stl\n'}
+[0.578072] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_knuckle.stl\n'}
+[0.578181] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_inner_finger.stl\n'}
+[0.578270] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_outer_finger.stl\n'}
+[0.578403] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_base_link.stl\n'}
+[0.579382] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/visual/2f_140/robotiq_2f_140_coupling.stl\n'}
+[0.579571] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision\n'}
+[0.579660] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85\n'}
+[0.579737] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_inner_knuckle.stl\n'}
+[0.579813] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_knuckle.stl\n'}
+[0.579888] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_knuckle.stl\n'}
+[0.579963] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger_tip.stl\n'}
+[0.580039] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger_tip.stl\n'}
+[0.580111] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/robotiq_base.stl\n'}
+[0.580188] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/left_finger.stl\n'}
+[0.580280] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/ur_to_robotiq_adapter.stl\n'}
+[0.580392] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_inner_knuckle.stl\n'}
+[0.580483] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_85/right_finger.stl\n'}
+[0.580724] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140\n'}
+[0.580805] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_knuckle.stl\n'}
+[0.580878] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_knuckle.stl\n'}
+[0.580954] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_inner_finger.stl\n'}
+[0.581031] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_outer_finger.stl\n'}
+[0.581113] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_base_link.stl\n'}
+[0.581260] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/meshes/collision/2f_140/robotiq_2f_140_coupling.stl\n'}
+[0.581357] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/rviz\n'}
+[0.581429] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/rviz/view_urdf.rviz\n'}
+[0.581504] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf\n'}
+[0.581576] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/2f_140.ros2_control.xacro\n'}
+[0.581648] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_gripper.urdf.xacro\n'}
+[0.581720] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140.xacro\n'}
+[0.581788] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/2f_85.ros2_control.xacro\n'}
+[0.581857] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_gripper.urdf.xacro\n'}
+[0.581931] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/ur_to_robotiq_adapter.urdf.xacro\n'}
+[0.582005] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_140_macro.urdf.xacro\n'}
+[0.582080] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/urdf/robotiq_2f_85_macro.urdf.xacro\n'}
+[0.582266] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/ament_index/resource_index/package_run_dependencies/robotiq_description\n'}
+[0.582406] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/ament_index/resource_index/parent_prefix_path/robotiq_description\n'}
+[0.582547] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.sh\n'}
+[0.582655] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/environment/ament_prefix_path.dsv\n'}
+[0.582765] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/environment/path.sh\n'}
+[0.582864] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/environment/path.dsv\n'}
+[0.582961] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/local_setup.bash\n'}
+[0.583057] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/local_setup.sh\n'}
+[0.583157] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/local_setup.zsh\n'}
+[0.583255] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/local_setup.dsv\n'}
+[0.583351] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/package.dsv\n'}
+[0.583482] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/ament_index/resource_index/packages/robotiq_description\n'}
+[0.583601] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig.cmake\n'}
+[0.583679] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/cmake/robotiq_descriptionConfig-version.cmake\n'}
+[0.583775] (robotiq_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_description/share/robotiq_description/package.xml\n'}
+[0.585648] (robotiq_description) CommandEnded: {'returncode': 0}
+[0.599910] (robotiq_description) JobEnded: {'identifier': 'robotiq_description', 'rc': 0}
+[0.600630] (-) TimerEvent: {}
+[0.700963] (-) TimerEvent: {}
+[0.711221] (robotiq_controllers) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.713260] (robotiq_controllers) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.731262] (robotiq_controllers) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.779911] (robotiq_controllers) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.782368] (robotiq_controllers) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.793831] (robotiq_controllers) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.795872] (robotiq_controllers) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.801114] (-) TimerEvent: {}
+[0.802721] (robotiq_controllers) StdoutLine: {'line': b'-- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND\n'}
+[0.812707] (robotiq_controllers) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.819820] (robotiq_controllers) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.878120] (robotiq_controllers) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.878365] (robotiq_controllers) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.901277] (-) TimerEvent: {}
+[0.942812] (robotiq_controllers) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.943922] (robotiq_controllers) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.966171] (ur_description) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.967536] (ur_description) StdoutLine: {'line': b'-- Generating done\n'}
+[0.968435] (ur_description) StdoutLine: {'line': b'-- Build files have been written to: /ws_moveit/build/ur_description\n'}
+[0.971402] (ur_description) CommandEnded: {'returncode': 0}
+[0.972710] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'build'}
+[0.972953] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws_moveit/build/ur_description', '--', '-j12', '-l12'], 'cwd': '/ws_moveit/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/ur_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.984512] (robotiq_controllers) StdoutLine: {'line': b'-- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[0.996676] (robotiq_controllers) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.001516] (-) TimerEvent: {}
+[1.002290] (ur_description) CommandEnded: {'returncode': 0}
+[1.002850] (ur_description) JobProgress: {'identifier': 'ur_description', 'progress': 'install'}
+[1.003021] (ur_description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws_moveit/build/ur_description'], 'cwd': '/ws_moveit/build/ur_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/ur_description'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.010149] (ur_description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.010312] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config\n'}
+[1.010373] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5\n'}
+[1.010432] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5/physical_parameters.yaml\n'}
+[1.010527] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5/default_kinematics.yaml\n'}
+[1.010599] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5/visual_parameters.yaml\n'}
+[1.010655] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5/joint_limits.yaml\n'}
+[1.010712] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur20\n'}
+[1.010768] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur20/physical_parameters.yaml\n'}
+[1.010824] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur20/default_kinematics.yaml\n'}
+[1.010880] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur20/visual_parameters.yaml\n'}
+[1.010960] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur20/joint_limits.yaml\n'}
+[1.011018] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur12e\n'}
+[1.011073] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur12e/physical_parameters.yaml\n'}
+[1.011170] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur12e/default_kinematics.yaml\n'}
+[1.011227] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur12e/visual_parameters.yaml\n'}
+[1.011282] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur12e/joint_limits.yaml\n'}
+[1.011336] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3e\n'}
+[1.011391] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3e/physical_parameters.yaml\n'}
+[1.011514] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3e/default_kinematics.yaml\n'}
+[1.011582] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3e/visual_parameters.yaml\n'}
+[1.011660] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3e/joint_limits.yaml\n'}
+[1.011716] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/initial_positions.yaml\n'}
+[1.011771] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3\n'}
+[1.011826] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3/physical_parameters.yaml\n'}
+[1.011880] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3/default_kinematics.yaml\n'}
+[1.011935] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3/visual_parameters.yaml\n'}
+[1.011990] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur3/joint_limits.yaml\n'}
+[1.012045] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5e\n'}
+[1.012100] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5e/physical_parameters.yaml\n'}
+[1.012155] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5e/default_kinematics.yaml\n'}
+[1.012208] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5e/visual_parameters.yaml\n'}
+[1.012262] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur5e/joint_limits.yaml\n'}
+[1.012316] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur16e\n'}
+[1.012427] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur16e/physical_parameters.yaml\n'}
+[1.012488] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur16e/default_kinematics.yaml\n'}
+[1.012555] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur16e/visual_parameters.yaml\n'}
+[1.012607] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur16e/joint_limits.yaml\n'}
+[1.012657] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10e\n'}
+[1.012708] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10e/physical_parameters.yaml\n'}
+[1.012758] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10e/default_kinematics.yaml\n'}
+[1.012807] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10e/visual_parameters.yaml\n'}
+[1.012858] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10e/joint_limits.yaml\n'}
+[1.012908] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur30\n'}
+[1.012959] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur30/physical_parameters.yaml\n'}
+[1.013022] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur30/default_kinematics.yaml\n'}
+[1.013073] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur30/visual_parameters.yaml\n'}
+[1.013123] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur30/joint_limits.yaml\n'}
+[1.013173] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur15\n'}
+[1.013223] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur15/physical_parameters.yaml\n'}
+[1.013273] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur15/default_kinematics.yaml\n'}
+[1.013323] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur15/visual_parameters.yaml\n'}
+[1.013373] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur15/joint_limits.yaml\n'}
+[1.013424] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10\n'}
+[1.013492] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml\n'}
+[1.013548] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml\n'}
+[1.013602] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml\n'}
+[1.013656] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml\n'}
+[1.013721] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur7e\n'}
+[1.013772] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur7e/physical_parameters.yaml\n'}
+[1.013823] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur7e/default_kinematics.yaml\n'}
+[1.013873] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur7e/visual_parameters.yaml\n'}
+[1.013923] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/config/ur7e/joint_limits.yaml\n'}
+[1.013973] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/launch\n'}
+[1.014024] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/launch/view_ur.launch.py\n'}
+[1.014074] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes\n'}
+[1.014124] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5\n'}
+[1.014175] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual\n'}
+[1.014226] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/wrist3.dae\n'}
+[1.014276] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/wrist1.dae\n'}
+[1.014327] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/wrist2.dae\n'}
+[1.014381] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/base.dae\n'}
+[1.014445] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/forearm.dae\n'}
+[1.014547] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/upperarm.dae\n'}
+[1.015433] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/visual/shoulder.dae\n'}
+[1.016043] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision\n'}
+[1.016108] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/shoulder.stl\n'}
+[1.016163] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/wrist2.stl\n'}
+[1.016233] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/base.stl\n'}
+[1.016314] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/wrist1.stl\n'}
+[1.016369] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/upperarm.stl\n'}
+[1.016424] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/wrist3.stl\n'}
+[1.016482] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5/collision/forearm.stl\n'}
+[1.016560] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20\n'}
+[1.016612] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual\n'}
+[1.016666] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/wrist3.dae\n'}
+[1.016737] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/UR20_DIFF_8bit_2K.png\n'}
+[1.017539] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/wrist1.dae\n'}
+[1.017731] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/wrist2.dae\n'}
+[1.017897] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/base.dae\n'}
+[1.018139] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/forearm.dae\n'}
+[1.018640] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/upperarm.dae\n'}
+[1.019037] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/visual/shoulder.dae\n'}
+[1.019143] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/LICENSE.txt\n'}
+[1.019207] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision\n'}
+[1.019278] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/shoulder.stl\n'}
+[1.019359] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/wrist2.stl\n'}
+[1.019435] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/base.stl\n'}
+[1.019495] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/wrist1.stl\n'}
+[1.019554] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/upperarm.stl\n'}
+[1.019633] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/wrist3.stl\n'}
+[1.019688] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur20/collision/forearm.stl\n'}
+[1.019759] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e\n'}
+[1.019841] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual\n'}
+[1.019897] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist3.dae\n'}
+[1.019950] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist1.dae\n'}
+[1.020711] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/wrist2.dae\n'}
+[1.021564] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/base.dae\n'}
+[1.021702] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/forearm.dae\n'}
+[1.022534] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/upperarm.dae\n'}
+[1.024566] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/visual/shoulder.dae\n'}
+[1.025897] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision\n'}
+[1.025972] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/shoulder.stl\n'}
+[1.026029] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist2.stl\n'}
+[1.026108] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/base.stl\n'}
+[1.026166] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist1.stl\n'}
+[1.026247] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/upperarm.stl\n'}
+[1.026320] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/wrist3.stl\n'}
+[1.026377] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3e/collision/forearm.stl\n'}
+[1.026433] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3\n'}
+[1.026516] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual\n'}
+[1.026572] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/wrist3.dae\n'}
+[1.026625] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/wrist1.dae\n'}
+[1.026806] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/wrist2.dae\n'}
+[1.027282] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/base.dae\n'}
+[1.027568] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/forearm.dae\n'}
+[1.028128] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/upperarm.dae\n'}
+[1.029265] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/visual/shoulder.dae\n'}
+[1.030164] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision\n'}
+[1.030225] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/shoulder.stl\n'}
+[1.030358] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/wrist2.stl\n'}
+[1.030486] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/base.stl\n'}
+[1.030995] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/wrist1.stl\n'}
+[1.031069] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/upperarm.stl\n'}
+[1.031342] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/wrist3.stl\n'}
+[1.031411] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur3/collision/forearm.stl\n'}
+[1.031561] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e\n'}
+[1.031639] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual\n'}
+[1.031702] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist3.dae\n'}
+[1.031755] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist1.dae\n'}
+[1.032447] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/wrist2.dae\n'}
+[1.033289] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/base.dae\n'}
+[1.033428] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/forearm.dae\n'}
+[1.034115] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/upperarm.dae\n'}
+[1.035940] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/visual/shoulder.dae\n'}
+[1.036882] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision\n'}
+[1.036947] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/shoulder.stl\n'}
+[1.037024] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist2.stl\n'}
+[1.037144] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/base.stl\n'}
+[1.037249] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist1.stl\n'}
+[1.037322] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/upperarm.stl\n'}
+[1.037385] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/wrist3.stl\n'}
+[1.037483] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur5e/collision/forearm.stl\n'}
+[1.037548] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e\n'}
+[1.037604] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e/visual\n'}
+[1.037661] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e/visual/forearm.dae\n'}
+[1.038267] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e/visual/upperarm.dae\n'}
+[1.039936] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e/collision\n'}
+[1.040044] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e/collision/upperarm.stl\n'}
+[1.040111] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur16e/collision/forearm.stl\n'}
+[1.040251] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e\n'}
+[1.040333] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual\n'}
+[1.040393] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist3.dae\n'}
+[1.040448] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist1.dae\n'}
+[1.041199] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/wrist2.dae\n'}
+[1.041985] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/base.dae\n'}
+[1.042147] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/forearm.dae\n'}
+[1.042907] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/upperarm.dae\n'}
+[1.044599] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/visual/shoulder.dae\n'}
+[1.045857] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision\n'}
+[1.045956] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/shoulder.stl\n'}
+[1.046090] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist2.stl\n'}
+[1.046177] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/base.stl\n'}
+[1.046253] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist1.stl\n'}
+[1.046314] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/upperarm.stl\n'}
+[1.046372] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/wrist3.stl\n'}
+[1.046462] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10e/collision/forearm.stl\n'}
+[1.046552] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30\n'}
+[1.046612] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/visual\n'}
+[1.046667] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/visual/forearm.dae\n'}
+[1.046741] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/visual/UR30_DIFF_8bit_2K.png\n'}
+[1.047448] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/visual/upperarm.dae\n'}
+[1.047881] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/LICENSE.txt\n'}
+[1.047980] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/collision\n'}
+[1.048045] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/collision/upperarm.stl\n'}
+[1.048132] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur30/collision/forearm.stl\n'}
+[1.048193] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15\n'}
+[1.048250] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual\n'}
+[1.048329] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/wrist3.dae\n'}
+[1.048383] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/wrist1.dae\n'}
+[1.048453] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/wrist2.dae\n'}
+[1.048544] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/base.dae\n'}
+[1.048755] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/UR15_DIFF_8bit_2K.jpg\n'}
+[1.048934] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/forearm.dae\n'}
+[1.049204] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/upperarm.dae\n'}
+[1.049505] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/visual/shoulder.dae\n'}
+[1.049609] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/LICENSE.txt\n'}
+[1.049701] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision\n'}
+[1.049767] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/shoulder.stl\n'}
+[1.049846] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/wrist2.stl\n'}
+[1.049908] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/base.stl\n'}
+[1.049969] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/wrist1.stl\n'}
+[1.050024] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/upperarm.stl\n'}
+[1.050078] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/wrist3.stl\n'}
+[1.050132] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur15/collision/forearm.stl\n'}
+[1.050206] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10\n'}
+[1.050257] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual\n'}
+[1.050307] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae\n'}
+[1.050358] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae\n'}
+[1.051129] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae\n'}
+[1.052338] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae\n'}
+[1.052412] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae\n'}
+[1.053518] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae\n'}
+[1.054482] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae\n'}
+[1.055091] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision\n'}
+[1.055148] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl\n'}
+[1.055230] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl\n'}
+[1.055286] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl\n'}
+[1.055342] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl\n'}
+[1.055415] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl\n'}
+[1.055550] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl\n'}
+[1.055621] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl\n'}
+[1.055693] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/rviz\n'}
+[1.055748] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/rviz/view_robot.rviz\n'}
+[1.055819] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf\n'}
+[1.055913] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf/ur.urdf.xacro\n'}
+[1.055978] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf/ur_macro.xacro\n'}
+[1.056034] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro\n'}
+[1.056089] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf/inc\n'}
+[1.056145] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro\n'}
+[1.056200] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro\n'}
+[1.056271] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/test\n'}
+[1.056349] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/test/test_view_ur_launch.py\n'}
+[1.056403] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py\n'}
+[1.056458] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description\n'}
+[1.056538] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description\n'}
+[1.056595] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/environment/ament_prefix_path.sh\n'}
+[1.056650] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv\n'}
+[1.056705] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/environment/path.sh\n'}
+[1.056761] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/environment/path.dsv\n'}
+[1.056831] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/local_setup.bash\n'}
+[1.056924] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/local_setup.sh\n'}
+[1.056983] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/local_setup.zsh\n'}
+[1.057035] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/local_setup.dsv\n'}
+[1.057086] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/package.dsv\n'}
+[1.057137] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ament_index/resource_index/packages/ur_description\n'}
+[1.057189] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake\n'}
+[1.057240] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake\n'}
+[1.057295] (ur_description) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_description/share/ur_description/package.xml\n'}
+[1.057368] (robotiq_controllers) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.057447] (robotiq_controllers) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /ws_moveit/src/ros2_robotiq_gripper/robotiq_controllers/include\n'}
+[1.057509] (robotiq_controllers) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.057931] (robotiq_controllers) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.058484] (ur_description) CommandEnded: {'returncode': 0}
+[1.059550] (robotiq_controllers) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.069913] (ur_description) JobEnded: {'identifier': 'ur_description', 'rc': 0}
+[1.070984] (ur_simulation_gazebo) JobStarted: {'identifier': 'ur_simulation_gazebo'}
+[1.076386] (robotiq_controllers) StdoutLine: {'line': b'-- Generating done\n'}
+[1.077248] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'cmake'}
+[1.077857] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '/ws_moveit/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo', '-DCMAKE_INSTALL_PREFIX=/ws_moveit/install/ur_simulation_gazebo'], 'cwd': '/ws_moveit/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ws_moveit/install/ur_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/ur_simulation_gazebo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws_moveit/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[1.080881] (robotiq_controllers) StdoutLine: {'line': b'-- Build files have been written to: /ws_moveit/build/robotiq_controllers\n'}
+[1.091795] (robotiq_controllers) CommandEnded: {'returncode': 0}
+[1.092238] (robotiq_controllers) JobProgress: {'identifier': 'robotiq_controllers', 'progress': 'build'}
+[1.092674] (robotiq_controllers) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws_moveit/build/robotiq_controllers', '--', '-j12', '-l12'], 'cwd': '/ws_moveit/build/robotiq_controllers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/robotiq_controllers'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.101621] (-) TimerEvent: {}
+[1.126083] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[1.139607] (robotiq_controllers) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/robotiq_controllers.dir/src/robotiq_activation_controller.cpp.o\x1b[0m\n'}
+[1.166706] (ur_simulation_gazebo) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.172085] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.201778] (-) TimerEvent: {}
+[1.231586] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.238235] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.238433] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.238924] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.241581] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.301917] (-) TimerEvent: {}
+[1.305936] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.313902] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.314072] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.314448] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.318115] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.402008] (-) TimerEvent: {}
+[1.438552] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.502110] (-) TimerEvent: {}
+[1.509070] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found launch_testing_ament_cmake: 1.0.9 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)\n'}
+[1.511758] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.526888] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.538321] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.538503] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.538579] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.538636] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.556308] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.558177] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)\n'}
+[1.602367] (-) TimerEvent: {}
+[1.603406] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.605205] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Generating done\n'}
+[1.606249] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Build files have been written to: /ws_moveit/build/ur_simulation_gazebo\n'}
+[1.612740] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[1.613147] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'build'}
+[1.613508] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/ws_moveit/build/ur_simulation_gazebo', '--', '-j12', '-l12'], 'cwd': '/ws_moveit/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ws_moveit/install/ur_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/ur_simulation_gazebo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws_moveit/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[1.648062] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[1.648609] (ur_simulation_gazebo) JobProgress: {'identifier': 'ur_simulation_gazebo', 'progress': 'install'}
+[1.649513] (ur_simulation_gazebo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws_moveit/build/ur_simulation_gazebo'], 'cwd': '/ws_moveit/build/ur_simulation_gazebo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/ws_moveit/install/ur_description:/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/ur_simulation_gazebo'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/ws_moveit/install/ur_description:/opt/ros/humble')]), 'shell': False}
+[1.655097] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.655265] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config\n'}
+[1.655328] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml\n'}
+[1.655385] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch\n'}
+[1.655441] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py\n'}
+[1.655640] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py\n'}
+[1.655723] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo\n'}
+[1.655785] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo\n'}
+[1.655871] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh\n'}
+[1.655930] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv\n'}
+[1.655986] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh\n'}
+[1.656041] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv\n'}
+[1.656096] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash\n'}
+[1.656151] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh\n'}
+[1.656204] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh\n'}
+[1.656258] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv\n'}
+[1.656312] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv\n'}
+[1.656366] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo\n'}
+[1.656420] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake\n'}
+[1.656496] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake\n'}
+[1.656556] (ur_simulation_gazebo) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml\n'}
+[1.657276] (ur_simulation_gazebo) CommandEnded: {'returncode': 0}
+[1.667784] (ur_simulation_gazebo) JobEnded: {'identifier': 'ur_simulation_gazebo', 'rc': 0}
+[1.702610] (-) TimerEvent: {}
+[1.803008] (-) TimerEvent: {}
+[1.903393] (-) TimerEvent: {}
+[2.003834] (-) TimerEvent: {}
+[2.104186] (-) TimerEvent: {}
+[2.204540] (-) TimerEvent: {}
+[2.304796] (-) TimerEvent: {}
+[2.405150] (-) TimerEvent: {}
+[2.505524] (-) TimerEvent: {}
+[2.605871] (-) TimerEvent: {}
+[2.706221] (-) TimerEvent: {}
+[2.806588] (-) TimerEvent: {}
+[2.906939] (-) TimerEvent: {}
+[3.007267] (-) TimerEvent: {}
+[3.081558] (robotiq_controllers) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library librobotiq_controllers.so\x1b[0m\n'}
+[3.107365] (-) TimerEvent: {}
+[3.194605] (robotiq_controllers) StdoutLine: {'line': b'[100%] Built target robotiq_controllers\n'}
+[3.203683] (robotiq_controllers) CommandEnded: {'returncode': 0}
+[3.205141] (robotiq_controllers) JobProgress: {'identifier': 'robotiq_controllers', 'progress': 'install'}
+[3.205289] (robotiq_controllers) Command: {'cmd': ['/usr/bin/cmake', '--install', '/ws_moveit/build/robotiq_controllers'], 'cwd': '/ws_moveit/build/robotiq_controllers', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('HOSTNAME', 'tccw10roboticlab1-ThinkPad-L15-Gen-3'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/root'), ('OLDPWD', '/ws_moveit/src'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('ROS_DISTRO', 'humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':0'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.7QJ192'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('DEBIAN_FRONTEND', 'noninteractive'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/ws_moveit/build/robotiq_controllers'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('TZ', 'Europe/Berlin'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.207486] (-) TimerEvent: {}
+[3.211510] (robotiq_controllers) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.211769] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/controller_plugins.xml\n'}
+[3.211834] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/lib/librobotiq_controllers.so\n'}
+[3.212610] (robotiq_controllers) StdoutLine: {'line': b'-- Set runtime path of "/ws_moveit/install/robotiq_controllers/lib/librobotiq_controllers.so" to ""\n'}
+[3.212702] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/include\n'}
+[3.212766] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/include/robotiq_controllers\n'}
+[3.212857] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/include/robotiq_controllers/robotiq_activation_controller.hpp\n'}
+[3.212919] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/environment/library_path.sh\n'}
+[3.213009] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/environment/library_path.dsv\n'}
+[3.213068] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/ament_index/resource_index/package_run_dependencies/robotiq_controllers\n'}
+[3.213126] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/ament_index/resource_index/parent_prefix_path/robotiq_controllers\n'}
+[3.213222] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/environment/ament_prefix_path.sh\n'}
+[3.213382] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/environment/ament_prefix_path.dsv\n'}
+[3.213503] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/environment/path.sh\n'}
+[3.213592] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/environment/path.dsv\n'}
+[3.213654] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/local_setup.bash\n'}
+[3.213712] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/local_setup.sh\n'}
+[3.213771] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/local_setup.zsh\n'}
+[3.213934] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/local_setup.dsv\n'}
+[3.214033] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/package.dsv\n'}
+[3.214096] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/ament_index/resource_index/packages/robotiq_controllers\n'}
+[3.214153] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/ament_index/resource_index/controller_interface__pluginlib__plugin/robotiq_controllers\n'}
+[3.214212] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/export_robotiq_controllersExport.cmake\n'}
+[3.214267] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/export_robotiq_controllersExport-noconfig.cmake\n'}
+[3.214322] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.214376] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.214429] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.214498] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.214559] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/robotiq_controllersConfig.cmake\n'}
+[3.214613] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/cmake/robotiq_controllersConfig-version.cmake\n'}
+[3.214758] (robotiq_controllers) StdoutLine: {'line': b'-- Installing: /ws_moveit/install/robotiq_controllers/share/robotiq_controllers/package.xml\n'}
+[3.216117] (robotiq_controllers) CommandEnded: {'returncode': 0}
+[3.224783] (robotiq_controllers) JobEnded: {'identifier': 'robotiq_controllers', 'rc': 0}
+[3.225319] (-) EventReactorShutdown: {}

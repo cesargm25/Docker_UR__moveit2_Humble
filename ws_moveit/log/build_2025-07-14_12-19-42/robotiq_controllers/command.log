@@ -1,0 +1,6 @@
+Invoking command in '/ws_moveit/build/robotiq_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/ros2_robotiq_gripper/robotiq_controllers -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/robotiq_controllers
+Invoked command in '/ws_moveit/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /ws_moveit/src/ros2_robotiq_gripper/robotiq_controllers -DCMAKE_INSTALL_PREFIX=/ws_moveit/install/robotiq_controllers
+Invoking command in '/ws_moveit/build/robotiq_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/robotiq_controllers -- -j12 -l12
+Invoked command in '/ws_moveit/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /ws_moveit/build/robotiq_controllers -- -j12 -l12
+Invoking command in '/ws_moveit/build/robotiq_controllers': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/robotiq_controllers
+Invoked command in '/ws_moveit/build/robotiq_controllers' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /ws_moveit/build/robotiq_controllers

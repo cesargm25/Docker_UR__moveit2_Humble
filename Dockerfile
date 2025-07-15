@@ -34,6 +34,7 @@ RUN apt-get update && apt-get install -y \
     lsb-release \
     gedit \
     unzip \
+    apt-transport-https \
     gnupg2
 
 # Install ROS 2 Humble and setup repositories correctly
@@ -85,6 +86,7 @@ RUN apt-get install -y \
 	qtbase5-dev \
 	python3-empy \
 	python3-pytest \
+	iputils-ping \
 	python3-numpy
 
 RUN apt update && apt install -y \
@@ -93,7 +95,7 @@ RUN apt update && apt install -y \
 	  ros-humble-moveit-ros-control-interface
 
 # Install additional ROS 2 packages
-RUN apt-get install -y \
+RUN apt update && apt-get install -y \
     ros-humble-teleop-twist-joy \
     ros-humble-teleop-twist-keyboard \
     ros-humble-navigation2 \
@@ -127,56 +129,35 @@ RUN apt-get update && apt-get install -y ros-humble-ur-client-library \
                    ros-humble-gazebo-ros2-control \
                    ros-humble-ament-clang-format \
                    ros-humble-ament-clang-tidy
-    
-# Initialize rosdep
-RUN rosdep init && rosdep update
 
-# Create workspace and download MoveIt 2 source code
-#RUN mkdir -p ~/ws_moveit/src
-#VOLUME ~/ws_moveit
-#
-#RUN cd ~/ws_moveit/src && \
-#    git clone -b humble https://github.com/moveit/moveit2_tutorials && \
-#    vcs import --recursive < moveit2_tutorials/moveit2_tutorials.repos 
-#
-## Install dependencies for workspace
-#RUN cd ~/ws_moveit &&  \
-#    sudo apt update && \
-#    rosdep install -r --from-paths . --ignore-src --rosdistro humble -y
+RUN apt-get update && apt-get install -y yamllint \
+                   ros-humble-ros2-control \
+                   ros-humble-ros2-controllers \
+                   gazebo \
+                   ros-humble-gazebo-ros2-control \
+                   ros-humble-gazebo-ros-pkgs \
+                   ros-humble-xacro\
+                   ros-humble-rmw-cyclonedds-cpp \
+                   ros-humble-sensor-msgs
 
 # Install packages for UR robots
-#RUN sudo apt update && \
-#    sudo apt install -y ros-humble-ur-client-library && \  
-#    sudo apt install -y ros-humble-ur 
-#    
-#RUN apt-get update && apt-get install -y \
-#    ros-humble-ur-bringup \
-#    ros-humble-ur-description \                     THIS MUST BE ELIMINATED 
-#    ros-humble-ur-controllers
+RUN sudo apt update && \
+    sudo apt install -y ros-humble-ur-client-library && \
+    sudo apt install -y ros-humble-ur
 
-#RUN cd ~/ws_moveit/src && \
-#    git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
-#RUN cd ~/ws_moveit/src && \
-#    git clone -b humble https://github.com/UniversalRobots/Universal_Robots_ROS2_Gazebo_Simulation.git
-
-#RUN cd ~/ws_moveit/src && \
-#    git clone https://github.com/jannishaberhausen/robotiq_2f_gripper_ros2.git && \
-#    cd robotiq_2f_gripper_ros2 && \
-#    git submodule update --init --recursive
-#
-## Build the Colcon Workspace with proper sourcing
-#RUN /bin/bash -c "source /opt/ros/humble/setup.bash && \
-#    cd ~/ws_moveit && \
-#    colcon build --mixin release --executor sequential"
+# Actualizar sistema (opcional, puedes omitir si prefieres)
+RUN apt-get update && apt-get upgrade -y
 
 # Source ROS 2 and Colcon Workspace on container start
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc 
  
-#   echo "source ~/ws_moveit/install/setup.bash" >> ~/.bashrc
+# echo "source ~/ws_moveit/install/setup.bash" >> ~/.bashrc
 # Clean up
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 #WORKDIR /ws_moveit
 
 # Entry point: Open a bash shell with sourced ROS environment
-#ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/humble/setup.bash && source ~/ws_moveit/install/setup.bash && exec bash"]
+# ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/humble/setup.bash"]
+
+
